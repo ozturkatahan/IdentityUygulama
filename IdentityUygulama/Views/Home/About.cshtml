@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+@if (Model != null)
+{
+<p>
+    Id: @Model.Id <br />
+    Email : @Model.Email <br />
+    LockoutEnabled: @Model.LockoutEnabled <br />
+    LockoutEndDateUtc: @Model.LockoutEndDateUtc <br />
+    PasswordHash: @Model.PasswordHash <br />
+    PhoneNumber: @Model.PhoneNumber <br />
+    PhoneNumberConfirmed: @Model.PhoneNumberConfirmed <br />
+    SecurityStamp: @Model.SecurityStamp <br />
+    TwoFactorEnabled: @Model.TwoFactorEnabled <br />
+    UserName: @Model.UserName <br />
+    AccessFailedCount: @Model.AccessFailedCount <br />
+</p>
+}
